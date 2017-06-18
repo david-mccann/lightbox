@@ -529,9 +529,14 @@ void msgpck_write_integer(Stream * s, int16_t i) {
       s->write(0xd1);
       s->write(i >> 8);
       s->write(i & 0xff);
-    } else {
-      msgpck_write_integer(s, (int8_t) i);
-    }
+	}
+	else {
+		if (i > 127) {
+			msgpck_write_integer(s, (uint8_t) i);
+		} else {
+			msgpck_write_integer(s, (int8_t) i);
+		}
+	}
 }
 
 void msgpck_write_integer(Stream * s, int32_t i) {

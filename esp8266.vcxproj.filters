@@ -21,22 +21,13 @@
     <ClInclude Include="__vm\.esp8266.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Actions.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="msgpack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BasicAction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="msgpack.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BasicAction.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
